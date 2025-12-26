@@ -50,7 +50,7 @@ To launch the project locally and view your ebook in a browser:
 
 ## PDF Generation
 
-The project uses the `with-pdf` plugin to automatically generate a document titled `Lorem-Ipsum-101.pdf`. Ensure your assets (like `assets/images/cover.jpg`) are in place to include a cover page in the export.
+The project uses the `to-pdf` plugin to automatically generate a document titled `lorem-ipsum-101.pdf`. Ensure your assets (like `assets/images/cover.jpg`) are in place to include a cover page in the export.
 
 ## 📄 License
 

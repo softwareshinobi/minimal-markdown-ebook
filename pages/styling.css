@@ -1,0 +1,17 @@
+/* PDF Watermark Styling */
+@media print {
+    body::before {
+        content: "LOREM IPSUM"; /* Change this to your desired text */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        font-size: 100pt;
+        color: rgba(0, 0, 0, 0.07); /* subtle grey opacity */
+        z-index: -1000;
+        white-space: nowrap;
+        pointer-events: none;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+}

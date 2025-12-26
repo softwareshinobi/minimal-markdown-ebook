@@ -32,3 +32,7 @@ plugins:
       # Performance (Highly Recommended)
       # This prevents the PDF from rebuilding every time you save an .md file
       enabled_if_env: ENABLE_PDF_EXPORT
+
+extra_css:
+
+  - styling.css

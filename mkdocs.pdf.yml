@@ -5,31 +5,30 @@ docs_dir: 'pages'
 site_dir: 'pdf'
 
 theme:
-    name: readthedocs
+    name: material
     highlightjs: true
     hljs_languages:
         - yaml
-
 plugins:
-    - with-pdf:
-        output_path: lorem-ipsum-101.pdf
+  - to-pdf:
+      # General metadata
+      author: "Consectetur Adipiscing"
+      copyright: "All Rights Reserved. Lorem Ipsum 2025."
 
-        author: "Consectetur Adipiscing"
+      # PDF Structure
+      output_path: "lorem-ipsum-101.pdf"
 
-        cover: true
+      # Cover Page
+      cover: true
+      cover_title: "Lorem Ipsum 101"
+      cover_subtitle: "The definitive guide to filler text"
+      cover_logo: "cover.png"
 
-        cover_title: "Lorem Ipsum 101"
+      # TOC and Headings
+      toc_title: "Indice Contentorum"
+      toc_level: 3
+      ordered_chapter_level: 2
 
-        cover_subtitle: "Nulla consequat massa quis enim donec pede"
-
-        cover_logo: /cover.png
-
-        toc_title: "Indice Contentorum"
-
-        toc_level: 2
-
-        copyright: "All Rights Reserved. Lorem Ipsum 2025."
-
-        heading_shift: true
-
-        ordered_chapter_level: 1
+      # Performance (Highly Recommended)
+      # This prevents the PDF from rebuilding every time you save an .md file
+      enabled_if_env: ENABLE_PDF_EXPORT

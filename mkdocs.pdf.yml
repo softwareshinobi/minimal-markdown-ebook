@@ -1,0 +1,35 @@
+site_name: "Lorem Ipsum (Dolor Sit)"
+
+docs_dir: 'pages'
+
+site_dir: 'pdf'
+
+theme:
+    name: readthedocs
+    highlightjs: true
+    hljs_languages:
+        - yaml
+
+plugins:
+    - with-pdf:
+        output_path: lorem-ipsum-101.pdf
+
+        author: "Consectetur Adipiscing"
+
+        cover: true
+
+        cover_title: "Lorem-Ipsum-101"
+
+        cover_subtitle: "Nulla consequat massa quis enim donec pede"
+
+        cover_logo: assets/images/cover.jpg
+
+        toc_title: "Indice Contentorum"
+
+        toc_level: 2
+
+        copyright: "All Rights Reserved. Lorem Ipsum 2025."
+
+        heading_shift: true
+
+        ordered_chapter_level: 1

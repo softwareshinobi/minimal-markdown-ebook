@@ -1,0 +1,23 @@
+services:
+
+    lorem-ipsum-dolor-sit:
+
+        container_name: lorem-ipsum-dolor-sit
+
+        image: softwareshinobi/consectetur-adipiscing-ebook
+
+        build:
+
+            context: .
+
+            dockerfile: Dockerfile
+
+        ports:
+
+            - 8000:80
+
+        environment:
+
+            VIRTUAL_HOST: lorem.ipsum.example
+
+            LETSENCRYPT_HOST: lorem.ipsum.example

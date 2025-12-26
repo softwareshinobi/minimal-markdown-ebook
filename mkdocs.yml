@@ -1,0 +1,55 @@
+##
+## Project information
+##
+
+site_name: "LoremIpsumDolor"
+
+docs_dir: 'pages'
+
+site_author: "Consectetur Adipiscing"
+
+##site_url: https://lorem-ipsum.example.io/
+##site_description: >-
+##  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+##  accusantium doloremque laudantium, totam rem aperiam.
+
+# Repository
+##repo_name: lorem/ipsum-dolor
+##repo_url: https://github.com/lorem/ipsum-dolor
+
+# Copyright
+##copyright: Copyright &copy; 2023 - 2025 Lorem Ipsum
+
+theme:
+    ##
+    ## Find More Themes Here:
+    ##
+    ##     https://mkdocs.github.io/mkdocs-bootswatch/
+    ##
+    ## List of theme values:
+    ##
+    ##     mkdocs, readthedocs, material, cerulean, cosmo,
+    ##     cyborg, darkly, flatly, journal, litera, lumen, lux,
+    ##     materia, minty, pulse, sandstone, simplex, slate, solar,
+    ##     spacelab, superhero, united, yeti
+    ##
+
+    name: readthedocs
+
+    ##
+    ## you can alternate colors for the navigation header.
+    ##
+    ## Allowed values: primary (the default), dark, and light:
+    ##
+
+    nav_style: primary
+
+    highlightjs: true
+
+    hljs_languages:
+
+        - yaml
+
+        - rust
+
+extra_css: [styling.css]

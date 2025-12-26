@@ -18,11 +18,11 @@ plugins:
 
         cover: true
 
-        cover_title: "Lorem-Ipsum-101"
+        cover_title: "Lorem Ipsum 101"
 
         cover_subtitle: "Nulla consequat massa quis enim donec pede"
 
-        cover_logo: assets/images/cover.jpg
+        cover_logo: /cover.png
 
         toc_title: "Indice Contentorum"
 

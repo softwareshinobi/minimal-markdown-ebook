@@ -1,38 +1,51 @@
 site_name: "Lorem Ipsum (Dolor Sit)"
 
-docs_dir: 'pages'
+docs_dir: "pages"
 
-site_dir: 'pdf'
+site_dir: "pdf"
 
 theme:
+
     name: material
+
     highlightjs: true
+
     hljs_languages:
+
+        - bash
+
         - yaml
+
+        - java
+
+        - python
+
 plugins:
-  - to-pdf:
-      # General metadata
-      author: "Consectetur Adipiscing"
-      copyright: "All Rights Reserved. Lorem Ipsum 2025."
 
-      # PDF Structure
-      output_path: "lorem-ipsum-101.pdf"
+    - to-pdf:
 
-      # Cover Page
-      cover: true
-      cover_title: "Lorem Ipsum 101"
-      cover_subtitle: "The definitive guide to filler text"
-      cover_logo: "cover.png"
+        author: "Consectetur Adipiscing"
 
-      # TOC and Headings
-      toc_title: "Indice Contentorum"
-      toc_level: 3
-      ordered_chapter_level: 2
+        copyright: "All Rights Reserved. Lorem Ipsum 2025."
 
-      # Performance (Highly Recommended)
-      # This prevents the PDF from rebuilding every time you save an .md file
-      enabled_if_env: ENABLE_PDF_EXPORT
+        output_path: "lorem-ipsum-101.pdf"
+
+        cover: true
+
+        cover_title: "Lorem Ipsum 101"
+
+        cover_subtitle: "The definitive guide to filler text"
+
+        cover_logo: "cover.png"
+
+        toc_title: "Indice Contentorum"
+
+        toc_level: 3
+
+        ordered_chapter_level: 2
+
+        enabled_if_env: ENABLE_PDF_EXPORT
 
 extra_css:
 
-  - styling.css
+    - styling.css

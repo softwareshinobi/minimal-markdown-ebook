@@ -2,11 +2,11 @@
 ## Project information
 ##
 
-site_name: "LoremIpsumDolor"
+site_name: "Lorem Ipsum Dolor"
 
 site_favicon: favicon.svg
 
-docs_dir: 'pages'
+docs_dir: "pages"
 
 site_author: "Consectetur Adipiscing"
 
@@ -23,6 +23,7 @@ site_author: "Consectetur Adipiscing"
 ##copyright: Copyright &copy; 2023 - 2025 Lorem Ipsum
 
 theme:
+
     ##
     ## Find More Themes Here:
     ##
@@ -50,8 +51,12 @@ theme:
 
     hljs_languages:
 
+        - bash
+
         - yaml
 
-        - rust
+        - java
+
+        - python
 
 extra_css: [styling.css]

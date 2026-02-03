@@ -4,7 +4,7 @@
 
 set -e
 
-#set -x
+set -v
 
 ##
 
@@ -18,9 +18,10 @@ ENABLE_PDF_EXPORT=1 mkdocs build -f mkdocs.pdf.yml
 
 rm -rf site/
 
-rm -rf pdf/
-
 ##
 
 for file in pdf/*.pdf; do firefox "$file" & done
+
+##
+
 

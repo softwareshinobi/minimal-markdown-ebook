@@ -4,7 +4,7 @@
 
 set -e
 
-set -v
+#set -x
 
 ##
 
@@ -18,6 +18,9 @@ ENABLE_PDF_EXPORT=1 mkdocs build -f mkdocs.pdf.yml
 
 rm -rf site/
 
+rm -rf pdf/
+
 ##
 
-firefox pdf/lorem-ipsum-101.pdf
+for file in pdf/*.pdf; do firefox "$file" & done
+
